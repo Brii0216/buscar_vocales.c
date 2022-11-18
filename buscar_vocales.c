@@ -7,20 +7,21 @@ void Lector_Vocales (char string[LIM]);
 int main()
 {
 	char string[LIM] = {'\0'}, decision;
-	printf("\nBienvenido a mi programa...\n");
+	printf("\nBienvenido\n");
 	printf("Ingrese un string de maximo 20 caraters para poder contar las vocales\n ");
 	fgets(string, LIM_FGETS, stdin);
-	for (int i = 0; i < LIM; i++)
+	// lee una cadena en el argumento stream de entrada y la almacena en str 
+	for (int f = 0; f < LIM; f++)
 	{
-		if (string[i] == 10)		
+		if (string[f] == 10)		
 		{
-			string[i] = '\0';
+			string[f] = '\0';
 		}
 	}
 	printf("El string a evaluar sera: ");
-	for (int i = 0; i < LIM; i++)
+	for (int f = 0; f < LIM; f++)
 	{
-		printf("%c", string[i]);		
+		printf("%c", string[f]);		
 	}
 	printf("\n");
 	Lector_Vocales (string);
