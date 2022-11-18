@@ -16,6 +16,6 @@ int main(){
             case 'u':vocal[4]++;break;
         }
     }
-        printf("Hay %i A, %i E, %i I, %i O y %i U en la palabra ingresada",vocal[0],vocal[1],vocal[2],vocal[3],vocal[4]);
+        printf("Hay A: %i, E: %i, I: %i, O: %i y U: %i en la palabra ingresada",vocal[0],vocal[1],vocal[2],vocal[3],vocal[4]);
         return 0;
 }
